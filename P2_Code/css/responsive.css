@@ -1,0 +1,88 @@
+@media screen and (min-width: 1891px) 
+{
+    .inside-elements-right {
+        display: inline-block;
+        margin: 15px;
+        margin-bottom: 30px;
+        padding: 20px;
+        box-shadow: 0px 30px 40px rgb(0 0 0 / 1%);
+        border-radius: 15px;
+        background-color: #b3b3b334; 
+        float: right;
+    }
+}
+
+/* Footer */
+
+@media screen and (max-width: 1890px)
+{
+    .inside-elements-right {
+        float: none;
+    }
+
+    .box-activites, .center-box {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1345px)
+{
+    .inside-elements-right {
+        float: right;
+    }
+
+    .inside-elements-left {
+        float: none;
+    }
+
+    .annonces {
+        grid-template-columns: none;
+    }
+}
+
+@media screen and (max-width: 1066px)
+{
+    .inside-elements-right {
+        float: none;
+    }
+}
+
+@media screen and (max-width: 1939px) 
+{
+    .a-propos, .nos-hebergements, .assistance {
+        margin-right: 16%;
+    }
+}
+
+@media screen and (max-width: 1829px)
+{
+    .a-propos, .nos-hebergements, .assistance {
+        margin-right: 14%;
+    }
+}
+
+@media screen and (max-width: 1619px)
+{
+    .a-propos, .nos-hebergements, .assistance {
+        margin-right: 10%;
+    }
+}
+
+@media screen and (max-width: 1297px)
+{
+    .a-propos, .nos-hebergements, .assistance {
+        margin-right: 4%;
+    }
+}
+
+@media screen and (max-width: 1221px)
+{
+    .a-propos, .nos-hebergements, .assistance {
+        margin-right: none;
+        display: initial;
+    }
+
+    .footer {
+        text-align: center;
+    }
+}

@@ -1,0 +1,494 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.body2 {
+    display: block;
+    margin: 15px;
+    padding: 15px;
+}
+
+header {
+    display: block;
+    padding: 5px;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+    list-style: none;
+
+}
+
+li,a {
+    text-decoration: none;
+    list-style: none;
+}
+
+h2, li {
+    font-family: 'Nunito', sans-serif;
+}
+
+h3 {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: bold;
+}
+
+/* HEADER */
+
+p, .infos-logement{
+    font-family: 'Andada Pro', serif;
+    color: rgba(0, 0, 0, 0.801);
+}
+
+.navbar {
+	padding: 15px;
+	/* width: 100%; */
+	height: 65px;	
+	display: flex;
+	align-items: center;
+}
+
+.navbar div img{
+    max-width: 60%;
+}
+
+.navbar ul.links {
+	margin-left: auto;
+	margin-right: 50px;
+	list-style: none;
+	display: flex;
+	align-items: center;		
+}
+
+.links li a {
+    color: black;
+    display: block;
+    padding: 15px;
+} 
+
+.links li a:hover {
+    color: rgb(45, 129, 255);
+    border-top: 1px solid rgb(45, 129, 255);
+} 
+
+/* FIN HEADER */
+
+
+/* MENU HAUT */
+
+.title, .nom-hebergement, .prix-hebergement {
+    font-family: 'Nunito', sans-serif;
+}
+
+.menu-haut {
+    display: block;
+    padding: 15px;
+}
+
+.liste-search {
+    display : block;
+    /* border: 1px solid black; */
+    width: 330px;
+    border-radius: 15px;
+}
+
+.liste-search li {
+    display : inline-block;
+    padding: 15px;
+}
+
+/* LISTE BOX RECHERCHE */
+.icon-recherche{
+    background-color: rgb(230 230 230 / 45%);
+    border-radius: 15px 0px 0px 15px;
+}
+
+.search {
+    background-color: rgb(32, 92, 255);
+    border-radius: 0px 15px 15px 0px;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+}
+
+.bar-search {
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+}
+/* FIN LISTE BOX RECHERCHE */
+
+/* SOUS MENU */
+.sous-menu {
+    display: block;
+    padding: 15px;
+}
+
+.liste-filtres {
+    margin-bottom: 20px;
+}
+
+.liste-filtres li, .liste-filtres div {
+    display : inline-block;
+    text-align: center;
+}
+
+.title-sousmenu {
+    margin-right: 6px;
+}
+
+.liste-filtres li {
+    font-weight: bold;
+}
+
+.eco, .famillie, .love, .pets {
+    padding-right: 8px;
+    margin-right: 6px;
+    border: 1px solid rgba(109, 109, 109, 0.397);
+    border-radius: 15px;
+}
+
+.eco i, .famillie i, .love i, .pets i {
+    background-color: rgb(126 168 255 / 36%);
+    border-radius: 15px;
+    margin-right: 6px;
+    padding: 7px;
+    color: rgb(32, 92, 255);
+}
+
+/* Ajustement de la largeur du logo pour un equilibre du design */
+.famillie i {
+    width: 20px;
+}
+/* Fin Ajustement */
+
+.infos li {
+    display : inline-grid;
+    padding: 5px;
+}
+
+.infos li i{
+    color: rgb(32, 92, 255)
+}
+
+.icon-infos {
+    border: 1px solid rgb(32, 92, 255);
+    border-radius: 15px;
+    height: 12px;
+    width: 12px;
+    text-align: center;
+}
+/* FIN SOUS MENU */
+
+
+/* FIN MENU HAUT */
+
+
+/* BOX CENTRAL*/
+
+.center-box {
+    display: block;
+    /* border: 1px solid black; */
+}
+
+.inside-elements-left {
+    margin: 15px;
+    padding: 28px;
+    /* border: 1px solid black; */
+    box-shadow: 0px 30px 40px rgba(0,0,0,1%);
+    display : inline-block;
+    border-radius: 15px;
+    background-color: #b3b3b334;
+    /* float: left; */
+}
+
+.title-left-box div {
+    font-weight: bold;
+    font-size: 21px;
+}
+
+.annonces {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px 2em;
+    margin-top: 25px;
+}
+
+.box-annonce{
+    display: block;
+    /* border: 1px solid black; */
+    box-shadow: 0px 30px 40px rgba(0,0,0,1%);
+    border-radius: 15px;
+    background-color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.img-annonces {
+    height: 217px;
+    width: 370px;
+}
+  
+.annonces :first-child {
+    align-self: center;
+}
+
+.box-description {
+    display: block;
+    padding: 10px;
+    margin-left: 15px;
+}
+
+.box-img {
+    margin: 5px;
+}
+
+.box-img img {
+    border-radius: 15px;
+}
+
+.plus {
+    margin: 5px;
+    font-weight: bold;
+}
+
+.plus:hover {
+    color: rgb(32, 92, 255);
+}
+
+.nom-hebergement {
+    font-weight: bold;
+}
+
+.prix-hebergement {
+    font-weight: lighter;
+    color: rgb(83, 83, 83);
+}
+
+
+
+.title-right-box {
+    text-align: center;
+}
+
+.title-right-box li, .title-right-box i{
+    display : inline-block;
+}
+
+.title-right-box li {
+    margin-left: 10px;
+    margin-right: 100px;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+.title-right-box i {
+    margin-left: 100px;
+    margin-right: 10px;
+}
+
+.inside-elements-right {
+    display : inline-block;
+    margin: 15px;
+    margin-bottom: 30px;
+    padding: 20px;
+    /* border: 1px solid black; */
+    box-shadow: 0px 30px 40px rgba(0,0,0,1%);
+    border-radius: 15px;
+    background-color: #b3b3b334;
+    /* float: right; */
+}
+
+.box-populaire{
+    display: flex;
+    /* border: 1px solid black; */
+    box-shadow: 0px 30px 40px rgba(0,0,0,1%);
+    border-radius: 15px;
+    margin: 19px;
+    margin-bottom: 30px;
+    background-color: #ffffff;
+}
+
+.annonces-populaire {
+    align-items: start;
+    justify-content: space-between;
+    margin-top: 39px;
+}
+  
+.annonces-populaire :first-child {
+    align-self: center;
+}
+
+.img-populaire {
+    height: 196px;
+    width: 224px;
+    align-items: start;
+}
+
+.box-img, .box-contenu-populaire {
+    display : inline-block;
+}
+
+.box-contenu-populaire {
+    margin-left: 9px;
+    margin-right: 9px;
+    max-width: 180px;
+}
+
+.box-description-populaire {
+    display: block;
+    margin: 9px;
+}
+
+/* PARTIE ETOILES */
+
+.rating-annonces {
+    margin-top: 3px;
+}
+
+.rating-populaire {
+    margin-top: 75px;
+}
+
+
+/* Par défaut, une étoile est en gris,
+   avec un padding et un curseur en forme de main. */
+.fa-star {
+	color: rgb(212, 212, 212);
+	cursor: pointer;
+	padding: 0.0625rem;
+}
+/* Si elle porte en plus la classe '.gold', elle sera en jaune. */
+.fa-star.gold {
+	color: rgb(32, 92, 255);
+}
+
+/* Le parent global '.rating' positionne le groupe des étoiles et le lien en colonne */
+.rating-annonces,  .rating-populaire{
+	display: flex;
+}
+
+/* Le groupe '.stars' positionne les étoiles
+        les unes à côté des autres sans espacements. */
+.stars {
+    display: inline-flex;
+    justify-content: center;
+}
+/* FIN PARTIE ETOILE */
+
+
+/* FIN BOX CENTRAL */
+
+
+/* BOX BAS */
+
+.nom-lieux {
+    font-family: 'Nunito', sans-serif;
+}
+
+.box-activites {
+    display: block;
+    margin: 15px;
+    /* border: 1px solid black; */
+}
+
+.title-box-activites {
+    display: block;
+    font-weight: bold;
+    font-size: 21px;
+    margin: 5px;
+}
+
+.contenu-activites {
+    display: inline-block;
+}
+
+.box-activites2-3, .box-activites5-6 {
+    display: inline-block;
+}
+
+.box-activites1, .box-activites2, .box-activites3, .box-activites4, .box-activites5, .box-activites6 {
+    /* border: 1px solid black; */
+    margin: 10px;
+    display: inline-block;
+    border-radius: 15px;
+    box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.164);
+    background-color: rgb(255, 255, 255);
+}
+
+.box-activites2, .box-activites3, .box-activites5, .box-activites6 {
+    margin: 10px;
+    display: block;
+    border-radius: 15px;
+    box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.164);
+    background-color: rgb(255, 255, 255);
+    height: 350px;
+}
+
+.img-activites {
+    box-shadow: 0px 30px 40px rgba(0,0,0,1%);
+    border-radius: 15px 15px 0px 0px;
+    width: 580px;
+    height: 306px;
+    overflow: hidden;
+}
+
+#photo1, #photo2 {
+    box-shadow: 0px 30px 40px rgba(0,0,0,1%);
+    border-radius: 15px 15px 0px 0px;
+    width: 580px;
+    height: 665px;
+    /* width: 610px;
+    height: 450px; */
+}
+
+.nom-lieux {
+    margin: 10px;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+/* FIN BOX BAS */
+
+
+/* PARTIE FOOTER */
+
+.titre-a-propos, .contenu-a-propos li, 
+.titre-nos-hebergements, .contenu-nos-hebergements li, 
+.titre-assistance, .contenu-assistance li {
+    font-family: 'Nunito', sans-serif;
+}
+
+footer {
+    background-color: #b3b3b334;
+    padding-top:15px;
+    padding-bottom:10px;
+    line-height:16px;
+    position: absolute;
+    width: 100%;
+}
+
+.footer {
+    display: block;
+}
+
+.a-propos, .nos-hebergements, .assistance {
+    display: inline-block;
+    margin-right: 550px;
+    margin-left: 100px;
+}
+
+.titre-a-propos, .titre-nos-hebergements, .titre-assistance {
+    font-weight: bold;
+    margin: 10px;
+    padding-bottom: 5px;
+}
+
+.contenu-a-propos li, .contenu-nos-hebergements li, .contenu-assistance li {
+    margin: 10px;
+}
+
+.contenu-a-propos li a:hover, .contenu-nos-hebergements li a:hover, .contenu-assistance li a:hover {
+    color: rgb(32, 92, 255);
+}
+
+/* FIN FOOTER */
