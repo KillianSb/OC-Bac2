@@ -104,6 +104,10 @@
         font-size: 27px;
     }
 
+    .liste-search li {
+        padding: 22px;
+    }
+
     .liste-search {
         display: contents;
     }
