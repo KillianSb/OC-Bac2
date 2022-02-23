@@ -5,11 +5,18 @@
 {
     .inside-elements-left {
         display: inherit;
-        margin: none;
+        margin: inherit;
+        background-color: white;
+    }
+
+    .title-right-box {
+        text-align: -webkit-center;
     }
 
     .inside-elements-right {
         display: block;
+        margin-left: -35px;
+        margin-right: -35px;
     }
 
     .img-annonces {
@@ -17,8 +24,15 @@
         width: 831px;
     }
 
+    .box-annonce {
+        box-shadow: 0px 30px 40px rgb(0 0 0 / 28%);
+    }
+
     .box-contenu-populaire {
-        max-width: 330px;
+        max-width: 334px;
+        height: 259px;
+        width: 280px;
+        margin-left: 32px;
     }
 
     .nom-hebergement {
@@ -31,11 +45,20 @@
 
     .title-right-box li {
         font-size: 35px;
+        margin-right: 240px;
+    }
+
+    .title-right-box i {
+        margin-left: 240px;
     }
 
     .img-populaire {
         height: 259px;
-        width: 399px;
+        width: 300px;
+    }
+
+    .title-left-box div {
+        font-size: 30px;
     }
 
     #photo1, #photo2, .img-activites {
