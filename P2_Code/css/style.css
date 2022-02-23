@@ -99,7 +99,7 @@ p, .infos-logement{
     padding: 15px;
 }
 
-.liste-search .search i {
+#loupe {
     display: none;
 }
 

@@ -22,7 +22,7 @@
     }
 
     .nom-hebergement {
-        font-size: 35px;
+        font-size: 28px;
     }
 
     .prix-hebergement, .rating-annonces, .rating-populaire {
@@ -30,7 +30,7 @@
     }
 
     .title-right-box li {
-        font-size: 50px;
+        font-size: 35px;
     }
 
     .img-populaire {
@@ -108,11 +108,11 @@
         padding: 22px;
     }
 
-    .liste-search .search i {
+    #loupe {
         display: initial;
     }
 
-    .search p{
+    #rechercher {
         display: none;
     }
 
