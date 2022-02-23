@@ -108,6 +108,14 @@
         padding: 22px;
     }
 
+    .liste-search .search i {
+        display: initial;
+    }
+
+    .search p{
+        display: none;
+    }
+
     .liste-search {
         display: contents;
     }

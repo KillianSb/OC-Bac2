@@ -99,6 +99,10 @@ p, .infos-logement{
     padding: 15px;
 }
 
+.liste-search .search i {
+    display: none;
+}
+
 /* LISTE BOX RECHERCHE */
 .icon-recherche{
     background-color: rgb(230 230 230 / 45%);
@@ -110,6 +114,12 @@ p, .infos-logement{
     border-radius: 0px 15px 15px 0px;
     color: white;
     font-family: 'Nunito', sans-serif;
+}
+
+.search p {
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
 }
 
 .bar-search {
@@ -267,8 +277,6 @@ p, .infos-logement{
     font-weight: lighter;
     color: rgb(83, 83, 83);
 }
-
-
 
 .title-right-box {
     text-align: center;
