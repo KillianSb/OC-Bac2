@@ -128,8 +128,7 @@ h2 {
 
 .restaurant1, .restaurant2, .restaurant3, .restaurant4 {
     display: block;
-    border: 1px solid black;
-    box-shadow: 0px 30px 40px rgba(0,0,0,1%);
+    box-shadow: 0px 30px 40px rgb(1 1 1 / 15%);
     border-radius: 15px;
 }
 
@@ -140,25 +139,39 @@ h2 {
 .img-restaurants {
     height: 450px;
     width: 883px;
+    position: relative;
 }
 
 .description {
     display: inline-block;
     padding: 10px;
     margin-left: 22px;
-    margin-right: 251px;
     font-family: 'Roboto', sans-serif;
     font-size: 33px;
 }
 
 .logo-heart {
     display: inline-block;
-    font-size: 33px;
+    font-size: 45px;
     margin-right: 22px;
-    margin-left: 250px;
+    float: right;
+    margin-top: 30px;
+}
+
+.logo-heart i:hover {
+    color: #9356DC;
+}
+
+.block-new {
+    display: block;
+    background-color: #99E2D0;
+    position: absolute;
+    z-index: 1;
+    margin: 17px;
 }
 
 .new {
-    display: flex;
-    float: right;
+    font-size: 25px;
+    margin: 15px;
+    font-family: 'Roboto', sans-serif;
 }
