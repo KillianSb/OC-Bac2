@@ -130,11 +130,11 @@ h2 {
 .restaurant1, .restaurant2, .restaurant3, .restaurant4 {
     display: block;
     box-shadow: 0px 30px 40px rgb(1 1 1 / 15%);
-    border-radius: 15px;
+    border-radius: 35px;
 }
 
 .box-img-restaurants img {
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 50px 50px 0px 0px;
 }
 
 .img-restaurants {
@@ -168,12 +168,12 @@ h2 {
     background-color: #99E2D0;
     position: absolute;
     z-index: 1;
-    margin: 17px;
+    margin: 40px;
     border-radius: 5px;
 }
 
 .new {
-    font-size: 25px;
+    font-size: 30px;
     margin: 15px;
     font-family: 'Roboto', sans-serif;
 }
