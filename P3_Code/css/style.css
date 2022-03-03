@@ -1,3 +1,5 @@
+/* HOME */
+
 body{
     margin: 0px;
     padding: 0px;
@@ -122,6 +124,14 @@ h2 {
     justify-items: center;
 }
 
+.box-restaurant a, .box-restaurant a:visited {
+    color: black;
+}
+
+.box-restaurant a:hover {
+    color: #9356DC;
+}
+
 .restaurants {
     display: block;
     margin: 10px;
@@ -183,13 +193,14 @@ footer {
     padding: 16px;
     margin: auto;
     color: white;
-    background-color: rgb(59, 59, 59);
+    background-color: rgb(53, 53, 53);
     box-shadow: 0px 10px 30px rgb(0 0 0 / 37%);
 }
 
 .titre-footer {
     font-family: 'Shrikhand', cursive;
     margin: 30px;
+    font-size: 28px;
 }
 
 .liste-footer {
@@ -219,3 +230,142 @@ footer {
 .texte-marge {
     padding-left: 40px;
 }
+
+/* Fin HOME */
+
+/* MENU */
+
+.logo-retour {
+    position: absolute;
+    font-size: 40px;
+    margin: 34px;
+}
+
+.logo-retour i:hover {
+    color: #9356DC;
+}
+
+.menu-haut-img {
+    display: block;
+    position: absolute;
+}
+
+.img-menu-haut {
+    height: 579px;
+    width: 980px;
+    position: absolute;
+}
+
+.logo-heart-menu {
+    display: inline-block;
+    font-size: 45px;
+    float: right;
+    margin: 50px;
+}
+
+.logo-heart-menu i:hover {
+    color: #9356DC;
+}
+
+.h2-menu {
+    font-family: 'Shrikhand', cursive;
+    font-size: 55px;
+    padding-top: 10px;
+    padding-left: 48px;
+    margin-bottom: 32px;
+    display: inline-block;
+    font-weight: initial;
+}
+
+.titre-page-menu {
+    display: block;
+    border-radius: 85px 85px 0px 0px;
+    position: relative;
+    background-color: white;
+    margin-top: 484px;
+}
+
+.sous-titre-menu {
+    font-family: 'Roboto', sans-serif;
+    margin: 24px;
+    padding: 3px;
+    font-size: 26px;
+    font-style: italic;
+    display: inline;
+    border-bottom: 4px solid #99E2D0;
+}
+
+.block-carte-menu {
+    display: block;
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 13px;
+}
+
+.liste-entrees, .liste-plats, .liste-desserts {
+    display: block;
+    margin-top: 38px;
+}
+
+.entrees1, .entrees2, .entrees3, .entrees4,
+.plats1, .plats2, .plats3,
+.desserts1, .desserts2, .desserts3 {
+    font-family: 'Roboto', sans-serif;
+    border-radius: 30px;
+    display: block;
+    box-shadow: 0px 10px 30px rgb(0 0 0 / 37%);
+    margin: 20px;
+    padding: 17px;
+    margin-bottom: 20px;
+    font-size: unset;
+}
+
+.sous-titre-entree, .titre-entree, .prix-entree,
+.sous-titre-plat, .titre-plat, .prix-plat,
+.sous-titre-dessert, .titre-dessert, .prix-dessert {
+    font-family: 'Roboto', sans-serif;
+}
+
+.titre-entree, .titre-plat, .titre-dessert,
+.prix-entree, .prix-plat, .prix-dessert {
+    font-weight: bold;
+}
+
+.titre-entree, .titre-plat, .titre-dessert {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+.sous-titre-entree, .prix-entree,
+.sous-titre-plat, .prix-plat,
+.sous-titre-dessert, .prix-dessert {
+    display: inline-block;
+    font-size: 28px;
+}
+
+.prix-entree, .prix-plat, .prix-dessert {
+    float: right;
+}
+
+.bloc-commander {
+    display: block;
+    text-align: center;
+    margin: 50px;
+    margin-bottom: 100px;
+}
+
+.commander {
+    font-family: 'Roboto', sans-serif;
+    display: inline;
+    text-align: center;
+    border-radius: 168px;
+    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    padding: 21px;
+    padding-left: 77px;
+    padding-right: 77px;
+    color: white;
+    font-size: 15px;
+}
+
+/* Fin MENU */
