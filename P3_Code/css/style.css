@@ -293,8 +293,6 @@ footer {
     font-style: italic;
     display: inline;
     border-bottom: 4px solid #99E2D0;
-
-    animation-name: var(transition);
 }
 
 .block-carte-menu {
@@ -320,8 +318,6 @@ footer {
     padding: 17px;
     margin-bottom: 20px;
     font-size: unset;
-
-    animation-name:  var(transition2);
 }
 
 .sous-titre-entree, .titre-entree, .prix-entree,
@@ -386,11 +382,25 @@ footer {
     0%   { margin-bottom: -50px;opacity:0; }
     100% { margin-bottom: 20px;opacity:1; }
     }
-.entrees1, .plats1, .desserts1
+.entrees1
 {opacity:0;animation: transition2 2s ease-in-out 1s forwards;}
-.entrees2, .plats2, .desserts2
-{opacity:0;animation: transition2 3s ease-in-out 1.5s forwards;}
-.entrees3, .plats3, .desserts3
+.entrees2
+{opacity:0;animation: transition2 2.5s ease-in-out 1.2s forwards;}
+.entrees3
+{opacity:0;animation: transition2 3s ease-in-out 1.4s forwards;}
+
+.plats1
 {opacity:0;animation: transition2 4s ease-in-out 2s forwards;}
+.plats2
+{opacity:0;animation: transition2 4.5s ease-in-out 2.2s forwards;}
+.plats3
+{opacity:0;animation: transition2 5s ease-in-out 2.4s forwards;}
+
+.desserts1
+{opacity:0;animation: transition2 6s ease-in-out 3s forwards;}
+.desserts2
+{opacity:0;animation: transition2 6.5s ease-in-out 3.2s forwards;}
+.desserts3
+{opacity:0;animation: transition2 7s ease-in-out 3.4s forwards;}
 
 /* Fin ANIMATION */
