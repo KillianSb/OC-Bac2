@@ -261,10 +261,15 @@ footer {
     font-size: 45px;
     float: right;
     margin: 50px;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
 
 .logo-heart-menu i:hover {
-    color: #9356DC;
+    color: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
 
 .h2-menu {
