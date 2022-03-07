@@ -355,8 +355,13 @@ footer {
     font-size: 28px;
 }
 
-.prix-entree, .prix-plat, .prix-dessert {
-    float: right;
+/*.prix-entree, .prix-plat, .prix-dessert {
+    display: flex;
+}*/
+
+.box-flex {
+	display: flex;
+	justify-content: space-between;
 }
 
 .bloc-commander {
