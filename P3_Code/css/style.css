@@ -577,30 +577,23 @@ footer {
 
 @keyframes loading {
     0%   { filter: blur(7px);opacity:0; }
-    20%   { filter: blur(6px);opacity:1; }
-    50%   { filter: blur(4px);opacity:1; }
-    80%   { filter: blur(2px);opacity:1; }
+    20%   { filter: blur(6px);;opacity:1; }
+    50%   { filter: blur(4px);;opacity:1; }
+    80%   { filter: blur(2px);;opacity:1; }
     100% { filter: blur(0px);opacity:1; }
 }
-
-/* @keyframes loding_body {
-    0%   { opacity:0; }
-    50%   { opacity:0; }
-    100% { opacity:1; }
-}
-*/
 
 .loding-body {
     opacity: 0;
     animation: loading 5s ease-in-out 0s forwards;
 }
 
-
 /* Animation ball */
 
 @keyframes spinner-loading {
     0%   { opacity:1; }
     50%   { opacity:1; }
+	90%   { opacity:1; }
     100% { opacity:0;display: none; }
 }
 
