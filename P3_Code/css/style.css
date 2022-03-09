@@ -9,6 +9,7 @@ h1 {
     font-family: 'Shrikhand', cursive;
     display: block;
     padding: 16px;
+	font-size: xxx-large;
     margin: auto;
     text-align: center;
     background-color: white;
@@ -205,7 +206,7 @@ footer {
 .titre-footer {
     font-family: 'Shrikhand', cursive;
     margin: 30px;
-    font-size: 28px;
+    font-size: xx-large;
 }
 
 .liste-footer {
@@ -243,7 +244,7 @@ footer {
 .logo-retour {
     position: absolute;
     font-size: 40px;
-    margin: 34px;
+    margin: 30px;
 }
 
 .logo-retour i:hover {
@@ -300,7 +301,7 @@ footer {
     font-family: 'Roboto', sans-serif;
     margin: 24px;
     padding: 3px;
-    font-size: 26px;
+    font-size: 35px;
     font-style: italic;
     display: inline;
     border-bottom: 4px solid #99E2D0;
@@ -321,20 +322,16 @@ footer {
 .entrees1, .entrees2, .entrees3, .entrees4,
 .plats1, .plats2, .plats3,
 .desserts1, .desserts2, .desserts3 {
-    font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto', sans-serif;
     border-radius: 30px;
-    display: block;
     box-shadow: 0px 10px 30px rgb(0 0 0 / 37%);
     margin: 20px;
     padding: 17px;
     margin-bottom: 20px;
-    font-size: unset;
-}
-
-.sous-titre-entree, .titre-entree, .prix-entree,
-.sous-titre-plat, .titre-plat, .prix-plat,
-.sous-titre-dessert, .titre-dessert, .prix-dessert {
-    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+    position: relative;
+    width: 92%;
+    display: flex;
 }
 
 .titre-entree, .titre-plat, .titre-dessert,
@@ -342,26 +339,82 @@ footer {
     font-weight: bold;
 }
 
-.titre-entree, .titre-plat, .titre-dessert {
-    display: block;
-    margin-bottom: 5px;
-    font-size: 15px;
-}
-
 .sous-titre-entree, .prix-entree,
 .sous-titre-plat, .prix-plat,
 .sous-titre-dessert, .prix-dessert {
-    display: inline-block;
     font-size: 28px;
 }
 
-/*.prix-entree, .prix-plat, .prix-dessert {
+.entrees1 .box-contenu,
+.entrees2 .box-contenu,
+.entrees3 .box-contenu,
+.entrees4 .box-contenu,
+.plats1 .box-contenu,
+.plats2 .box-contenu,
+.plats3 .box-contenu,
+.desserts1 .box-contenu,
+.desserts2 .box-contenu,
+.desserts3 .box-contenu {
+	/* on met une transition pour le changement de width, justify content: space between pour que ce soit de chaque coté du block et align item: flex-end pour que le prix soit en bas */
+    transition: 0.5s ease 0s;
     display: flex;
-}*/
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+}
 
-.box-flex {
+.entrees1 .info,
+.entrees2 .info,
+.entrees3 .info,
+.entrees4 .info,
+.plats1 .info,
+.plats2 .info,
+.plats3 .info,
+.desserts1 .info,
+.desserts2 .info,
+.desserts3 .info {
 	display: flex;
-	justify-content: space-between;
+	flex-direction: column;
+	justify-content:space-around;
+}
+
+.entrees1 .box-contenu .info .titre-entree,
+.entrees2 .box-contenu .info .titre-entree,
+.entrees3 .box-contenu .info .titre-entree,
+.entrees4 .box-contenu .info .titre-entree,
+.plats1 .box-contenu .info .titre-plat,
+.plats2 .box-contenu .info .titre-plat,
+.plats3 .box-contenu .info .titre-plat,
+.desserts1 .box-contenu .info .titre-dessert,
+.desserts2 .box-contenu .info .titre-dessert,
+.desserts3 .box-contenu .info .titre-dessert {
+	font-size: 30px;
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+
+.entrees1 .circle,
+.entrees2 .circle,
+.entrees3 .circle,
+.entrees4 .circle,
+.plats1 .circle,
+.plats2 .circle,
+.plats3 .circle,
+.desserts1 .circle,
+.desserts2 .circle,
+.desserts3 .circle {
+	/* position absolute à -60px (la taille du block) pour qu'il soit en dehors du block */
+	transition: 0.5s ease 0s;
+    position: absolute;
+    right: -110px;
+    top: 0;
+    background-color: #99E2D0;
+    height: 100%;
+    width: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	font-size: xx-large;
 }
 
 .bloc-commander {
@@ -381,12 +434,14 @@ footer {
     padding-left: 77px;
     padding-right: 77px;
     color: white;
-    font-size: 15px;
+    font-size: 30px;
 }
 
 /* Fin MENU */
 
 /* ANIMATION */
+
+/* Apparition menu */
 
 @keyframes transition {
     0%   { margin-left: -70px;opacity:0; }
@@ -415,6 +470,11 @@ footer {
 .entrees3 {
     opacity: 0;
     animation: transition2 3s ease-in-out 1.4s forwards;
+}
+
+.entrees4 {
+    opacity: 0;
+    animation: transition2 3.5s ease-in-out 1.6s forwards;
 }
 
 .plats1 {
@@ -446,6 +506,72 @@ footer {
     opacity: 0;
     animation: transition2 7s ease-in-out 3.4s forwards;
 }
+
+/* Fin apparition menu */
+
+/* Icon validation apparition */
+
+.entrees1:hover .circle i,
+.entrees2:hover .circle i,
+.entrees3:hover .circle i,
+.entrees4:hover .circle i,
+.plats1:hover .circle i,
+.plats2:hover .circle i,
+.plats3:hover .circle i,
+.desserts1:hover .circle i,
+.desserts2:hover .circle i,
+.desserts3:hover .circle i {
+	/* animation de rotation sur le hover de block */
+	transition-delay: 0.2s;
+	transform: rotate(-360deg);
+}
+
+.entrees1 .circle i,
+.entrees2 .circle i,
+.entrees3 .circle i,
+.entrees4 .circle i,
+.plats1 .circle i,
+.plats2 .circle i,
+.plats3 .circle i,
+.desserts1 .circle i,
+.desserts2 .circle i,
+.desserts3 .circle i {
+	/* pour revenir à la position initial quand on est plus sur le hover */
+	transition: transform 0.5s ease 0s;
+	color: white;
+}
+
+.entrees1:hover .box-contenu,
+.entrees2:hover .box-contenu,
+.entrees3:hover .box-contenu,
+.entrees4:hover .box-contenu,
+.plats1:hover .box-contenu,
+.plats2:hover .box-contenu,
+.plats3:hover .box-contenu,
+.desserts1:hover .box-contenu,
+.desserts2:hover .box-contenu,
+.desserts3:hover .box-contenu {
+	/* on change la width du block avec les infos sur le hover */
+	transition: 0.5s ease 0s;
+	width: 85%;
+}
+
+.entrees1:hover .circle,
+.entrees2:hover .circle,
+.entrees3:hover .circle,
+.entrees4:hover .circle,
+.plats1:hover .circle,
+.plats2:hover .circle,
+.plats3:hover .circle,
+.desserts1:hover .circle,
+.desserts2:hover .circle,
+.desserts3:hover .circle {
+	/* on change la position du cercle à 0 pour qu'il soit dans le block avec une transition pour que ce soit smooth */
+	right: 0;
+	transition: 0.5s ease 0s;
+}
+
+/* Fin Icon validation apparition */
 
 /* Animation Ecrant noir */
 
