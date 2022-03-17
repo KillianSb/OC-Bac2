@@ -69,6 +69,11 @@ h3 {
     font-size: 30px;
 }
 
+.explore:hover {
+    background: linear-gradient(to bottom right, #fa81d8, #b274ff);
+    box-shadow: 2px 5px 5px rgb(0, 0, 0);
+}
+
 .fonctionnement {
     display: block;
     padding: 10px;
@@ -174,9 +179,9 @@ h2 {
 }
 
 .logo-heart i:hover {
-    color: #9356DC;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
+    animation: coeur 6s ease-in-out 0s forwards;
 }
 
 .block-new {
@@ -253,12 +258,11 @@ footer {
 
 .menu-haut-img {
     display: block;
-    position: absolute;
-}
+    position: fixed;}
 
 .img-menu-haut {
-    height: 579px;
-    width: 980px;
+    height: 657px;
+    width: 1788px;
     position: absolute;
 }
 
@@ -274,9 +278,9 @@ footer {
 
 .logo-heart-menu i:hover {
     /* color: linear-gradient(to bottom right, #FF79DA, #9356DC); */
-    color: #9356DC;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
+    animation: coeur 6s ease-in-out 0s forwards;
 }
 
 .h2-menu {
@@ -311,7 +315,8 @@ footer {
     display: block;
     padding: 10px;
     margin: auto;
-    margin-bottom: 13px;
+    position: relative;
+    background-color: white;
 }
 
 .liste-entrees, .liste-plats, .liste-desserts {
@@ -420,8 +425,10 @@ footer {
 .bloc-commander {
     display: block;
     text-align: center;
-    margin: 50px;
-    margin-bottom: 100px;
+    padding: 50px;
+    padding-bottom: 100px;
+    position: relative;
+    background-color: white;
 }
 
 .commander {
@@ -435,6 +442,11 @@ footer {
     padding-right: 77px;
     color: white;
     font-size: 30px;
+}
+
+.commander:hover {
+    background: linear-gradient(to bottom right, #fa81d8, #b274ff);
+    box-shadow: 2px 5px 5px rgb(0, 0, 0);
 }
 
 /* Fin MENU */
@@ -703,4 +715,74 @@ footer {
     100% { width:90px;height:2px }
 }
 
+/* Fin animation ball */
+
+/* Animation Coeur fondu */
+
+@keyframes coeur {
+    0%   { color: #6c06e9;;opacity:0; }
+    20% { color: #7620df;opacity:0.5; }
+    60% { color: #843add;opacity:1; }
+    100% { color: #9356DC;opacity:1; }
+}
+
+/* Fin animation Coeur fondu */
+
 /* Fin ANIMATION */
+
+
+/* Responsive */
+
+@media screen and (max-device-width: 2600px) {
+    .img-menu-haut {
+        height: 725px;
+        width: 2600px;
+    }
+
+    .number {
+        padding: 9px;
+        margin: auto;
+    }
+
+    .box-restaurant {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-device-width: 1780px) {
+    .img-menu-haut {
+        width: 1780px;
+    }
+
+    .box-restaurant {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media screen and (max-device-width: 1070px) {
+    .img-menu-haut {
+        height: 571px;
+        width: 1095px;
+    }
+}
+
+@media screen and (max-device-width: 700px) {
+    .number {
+        padding: 21px;
+        margin: 3px;
+    }
+}
+
+@media screen and (max-device-width: 380px) {
+    
+    .menu-haut-img {
+        display: block;
+        position: absolute;
+    }
+
+    .img-menu-haut {
+        height: 579px;
+        width: 980px;
+    }
+}
