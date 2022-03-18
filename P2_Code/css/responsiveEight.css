@@ -74,7 +74,7 @@
     .box-activites2, .box-activites3, .box-activites5, .box-activites6 {
         height: auto;
         margin-bottom: 24px;
-        margin: none;
+        margin: inherit;
     }
 
     .box-activites2-3, .box-activites5-6 {
@@ -162,7 +162,7 @@
     }
 
     .box-description {
-        text-align: none;
+        text-align: inherit;
     }
 
     .box-activites, .center-box {

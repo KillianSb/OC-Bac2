@@ -78,7 +78,7 @@
 @media screen and (max-width: 1221px)
 {
     .a-propos, .nos-hebergements, .assistance {
-        margin-right: none;
+        margin-right: inherit;
         display: initial;
     }
 
