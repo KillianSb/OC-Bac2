@@ -24,15 +24,19 @@ function displayProducts(products) {
       let liensA = document.createElement("a");
       // Ajout de l'attribut "href" a la basile "a"
       liensA.setAttribute("href", "./product.html?id="+element._id);
+
       let article = document.createElement("article");
+
       let image = document.createElement("img");
       image.setAttribute("src", element.imageUrl);
       image.setAttribute("alt", element.altTxt);
+
       let titreH3 = document.createElement("h3");
       // Création de la classe "productName" au "h3"
       titreH3.classList.add("productName")
       // Incrémentation du nom récupérer pour "productName"
       titreH3.textContent = element.name;
+
       let paragraphe = document.createElement("p");
       paragraphe.classList.add("productDescription")
       paragraphe.textContent = element.description;
