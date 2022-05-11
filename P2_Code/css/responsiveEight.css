@@ -1,7 +1,7 @@
 /* Iphone 8 */
 
 
-@media screen and (max-device-width: 673px)
+@media screen and (max-device-width: 674px)
 {
     .inside-elements-left {
         display: inherit;
@@ -24,8 +24,27 @@
         width: 853px;
     }
 
+    .search {
+        border-radius: 19px 19px 19px 19px;
+    }
+
+    #title {
+        font-size: 30px;
+    }
+
+    #title-sousmenu {
+        display: flex;
+    }
+
+    #love {
+        display: table;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+
     .box-annonce {
         box-shadow: 0px 30px 40px rgb(0 0 0 / 28%);
+        border-radius: 35px;
     }
 
     .box-contenu-populaire {
@@ -65,6 +84,14 @@
         width: 300px;
     }
 
+    .box-img-populaire img {
+        border-radius: 45px 0px 0px 43px;
+    }
+
+    .box-img-annonce img {
+        border-radius: 35px 35px 0px 0px;
+    }
+
     .title-left-box div {
         font-size: 30px;
     }
@@ -72,6 +99,7 @@
     #photo1, #photo2, .img-activites {
         width: 861px;
         height: 314px;
+        border-radius: 35px 35px 0px 0px;
     }
 
     .nom-lieux {
@@ -93,7 +121,7 @@
         /* border: 1px solid black; */
         margin: 10px;
         display: inline-block;
-        border-radius: 15px;
+        border-radius: 35px;
         box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.164);
         background-color: rgb(255, 255, 255);
     }
@@ -108,6 +136,10 @@
 
     .links li a {
         font-size: 30px;
+        font-size: 30px;
+        border-top: none;
+        border-bottom: 4px solid rgb(255 255 255 / 0%);
+        width: 460px;
     }
 
     .navbar {
@@ -131,8 +163,16 @@
         margin-top: 142px;
     }
 
-    .liste-search li, .liste-filtres, .liste-filtres li, .infos li {
+    .liste-search li, .liste-filtres, .liste-filtres div {
         font-size: 30px;
+    }
+
+    .infos div {
+        font-size: 22px;
+    }
+
+    .box-populaire {
+        border-radius: 45px;
     }
 
     .liste-search li {
@@ -154,14 +194,15 @@
     .icon-infos {
         border-radius: 27px;
         height: 20px;
-        width: 17px;
+        width: 22px;
         text-align: center;
     }
 
     .links li a:hover {
-        color: rgb(45, 129, 255);
+        color: rgb(16 112 255);
         border-top: none;
-        border-bottom: 1px solid rgb(45, 129, 255);
+        border-bottom: 4px solid rgb(45, 129, 255);
+        width: 460px;
     } 
 
     div.recherche {

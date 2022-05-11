@@ -30,6 +30,10 @@ li,a {
     list-style: none;
 }
 
+h2 {
+    font-size: 23px;
+}
+
 h2, li {
     font-family: 'Nunito', sans-serif;
 }
@@ -42,7 +46,7 @@ h3 {
 /* HEADER */
 
 p, .infos-logement{
-    font-family: 'Andada Pro', serif;
+    font-family: 'Nunito', sans-serif;
     color: rgba(0, 0, 0, 0.801);
 }
 
@@ -74,7 +78,7 @@ p, .infos-logement{
 } 
 
 .links li a:hover {
-    color: rgb(45, 129, 255);
+    color: rgb(16 112 255);
     border-top: 1px solid rgb(45, 129, 255);
 } 
 
@@ -111,12 +115,12 @@ p, .infos-logement{
 /* LISTE BOX RECHERCHE */
 .icon-recherche{
     background-color: rgb(230 230 230 / 45%);
-    border-radius: 15px 0px 0px 15px;
+    border-radius: 19px 0px 0px 19px;
 }
 
 .search {
     background-color: rgb(32, 92, 255);
-    border-radius: 0px 15px 15px 0px;
+    border-radius: 0px 19px 19px 0px;
     color: white;
     font-family: 'Nunito', sans-serif;
 }
@@ -143,7 +147,7 @@ p, .infos-logement{
     margin-bottom: 20px;
 }
 
-.liste-filtres li, .liste-filtres div {
+.liste-filtres div, .liste-filtres div {
     display : inline-block;
     text-align: center;
 }
@@ -152,15 +156,16 @@ p, .infos-logement{
     margin-right: 6px;
 }
 
-.liste-filtres li {
+.liste-filtres div {
     font-weight: bold;
+    font-family: 'Exo 2', sans-serif;
 }
 
 .eco, .famillie, .love, .pets {
     padding-right: 8px;
     margin-right: 6px;
     border: 1px solid rgba(109, 109, 109, 0.397);
-    border-radius: 15px;
+    border-radius: 25px;
 }
 
 .eco:hover, .famillie:hover, .love:hover, .pets:hover {
@@ -189,17 +194,18 @@ p, .infos-logement{
 }
 /* Fin Ajustement */
 
-.infos li {
+.infos div {
     display : inline-grid;
     padding: 5px;
+    font-size: 16px;
 }
 
-.infos li i{
+.infos div i{
     color: rgb(32, 92, 255)
 }
 
 .icon-infos {
-    border: 1px solid rgb(32, 92, 255);
+    border: 1px solid rgb(84 84 84);
     border-radius: 15px;
     height: 12px;
     width: 12px;
@@ -237,7 +243,7 @@ p, .infos-logement{
 .annonces {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px 2em;
+    gap: 10px 4em;
     margin-top: 25px;
 }
 
@@ -300,20 +306,24 @@ p, .infos-logement{
     text-align: center;
 }
 
-.title-right-box li, .title-right-box i{
+.title-right-box div, .title-right-box i{
     display : inline-block;
 }
 
-.title-right-box li {
+.title-right-box div {
     margin-left: 10px;
     margin-right: 100px;
     font-weight: bold;
-    font-size: 21px;
+}
+
+.title {
+    font-size: 30px;
 }
 
 .title-right-box i {
     margin-left: 100px;
     margin-right: 10px;
+    font-size: 20px;
 }
 
 .inside-elements-right {
