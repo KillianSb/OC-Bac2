@@ -52,5 +52,5 @@ function displayProducts(products) {
     })
   }
   // Table des canapés
-  console.table(products);
+  // console.table(products);
 }

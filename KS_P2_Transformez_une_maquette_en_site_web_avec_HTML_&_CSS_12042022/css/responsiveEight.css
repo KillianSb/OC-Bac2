@@ -19,6 +19,19 @@
         margin-right: -35px;
     }
 
+    .eco, .famillie, .love, .pets {
+        padding-right: 15px;
+    }
+
+    .eco i, .famillie i, .love i, .pets i {
+        padding: 10px;
+    }
+
+    .liste-filtres div, .liste-filtres div {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
     .img-annonces {
         height: 319px;
         width: 853px;
