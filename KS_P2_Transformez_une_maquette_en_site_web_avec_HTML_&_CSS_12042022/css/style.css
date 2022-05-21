@@ -259,6 +259,7 @@ p, .infos-logement{
 .img-annonces {
     height: 217px;
     width: 100%;
+    margin: 2px;
 }
 
 .box-description {
@@ -324,7 +325,7 @@ p, .infos-logement{
 
 .inside-elements-right {
     display: flex;
-    padding: 20px;
+    padding: 10px;
     box-shadow: 0px 30px 40px rgb(0 0 0 / 1%);
     border-radius: 15px;
     background-color: #b3b3b334;
@@ -336,7 +337,6 @@ p, .infos-logement{
     display: flex;
     box-shadow: 0px 30px 40px rgba(0,0,0,1%);
     border-radius: 15px;
-    margin: 19px;
     margin-bottom: 30px;
     background-color: #ffffff;
 }
@@ -355,6 +355,7 @@ p, .infos-logement{
     height: 196px;
     width: 100%;
     align-items: start;
+    margin: 2px;
 }
 
 .box-contenu-populaire {
