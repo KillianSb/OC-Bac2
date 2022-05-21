@@ -27,7 +27,7 @@ h1 {
 .menu-haut i {
     display: inline-block;
     padding: 20px;
-    font-size: 12px;
+    font-size: 25px;
 }
 
 h4 {
@@ -104,7 +104,7 @@ h2 {
     display: block;
     box-shadow: 0px 10px 30px rgb(0 0 0 / 37%);
     margin: 20px;
-    padding: 10px;
+    padding: 30px 40px;
     margin-bottom: 40px;
 }
 
@@ -154,6 +154,10 @@ h2 {
     border-radius: 35px;
 }
 
+.box-img-restaurants {
+    position: relative;
+}
+
 .box-img-restaurants img {
     border-radius: 50px 50px 0px 0px;
 }
@@ -196,8 +200,9 @@ h2 {
     background-color: #99E2D0;
     position: absolute;
     z-index: 1;
-    margin: 40px;
+    margin: 21px;
     border-radius: 5px;
+    right: 0;
 }
 
 .new {
@@ -749,6 +754,12 @@ footer {
     .number {
         padding: 9px;
         margin: auto;
+        left: -14px;
+        top: 22px;
+    }
+
+    .box1, .box2, .box3 {
+        position: relative;
     }
 
     .box-restaurant {
@@ -772,12 +783,20 @@ footer {
         height: 571px;
         width: 1095px;
     }
+
+    .menu-haut i {
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-device-width: 700px) {
     .number {
-        padding: 21px;
-        margin: 3px;
+        padding: 20px;
+        left: -24px;
+    }
+
+    .menu-haut i {
+        font-size: 13px;
     }
 }
 

@@ -1,8 +1,6 @@
 /* Iphone 8 */
+@media screen and (max-width: 768px){
 
-
-@media screen and (max-device-width: 674px)
-{
     .inside-elements-left {
         display: inherit;
         margin: inherit;
