@@ -1,15 +1,3 @@
-@media screen and (max-width: 960px){
-    .box-annonce {
-        width: 47%;
-    }
-}
-
-@media screen and (max-width: 880px){
-    .box-annonce {
-        width: 45%;
-    }
-}
-
 @media screen and (max-width: 768px){
 
     .center-box {

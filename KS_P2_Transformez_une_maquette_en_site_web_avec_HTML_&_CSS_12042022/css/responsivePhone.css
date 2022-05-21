@@ -106,8 +106,9 @@
     }
 
     .inside-elements-right {
-        margin-left: -43px;
-        width: 107%;
+        margin-left: -23px;
+        width: 115%;
+        border-radius: unset;
     }
 
     .title-right-box div, .title-right-box i {
@@ -174,7 +175,6 @@
 
     .footer {
         flex-direction: column;
-        margin-left: 25px;
     }
 
     .a-propos, .nos-hebergements, .assistance {

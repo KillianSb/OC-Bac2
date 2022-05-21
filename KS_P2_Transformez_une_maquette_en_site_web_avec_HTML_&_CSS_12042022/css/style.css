@@ -259,14 +259,14 @@ p, .infos-logement{
 .img-annonces {
     height: 217px;
     width: 100%;
-    margin: 2px;
 }
 
 .box-description {
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin: 15px;
+    margin: 2px;
+    flex-wrap: wrap;
 }
 
 .box-img-annonce, .box-img-populaire {
@@ -355,7 +355,6 @@ p, .infos-logement{
     height: 196px;
     width: 100%;
     align-items: start;
-    margin: 2px;
 }
 
 .box-contenu-populaire {
