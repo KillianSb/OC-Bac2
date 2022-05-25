@@ -170,6 +170,7 @@ function modifier(event) {
   const update = panier.find(panier => articleId == panier.id && articleColor == panier.color);
 
   update.quantity = articleQuantity;
+  
   localStorage.setItem("panier", JSON.stringify(panier));
   total();
 }

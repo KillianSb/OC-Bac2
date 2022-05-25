@@ -11,9 +11,13 @@ fetch("http://localhost:3000/api/products")
 
   })
   .catch(function (err) {
-    console.log("Erreur");
+    erreurMessageApi(err);
   });
 ;
+
+function erreurMessageApi() {
+  console.table("ERREUR");
+}
 
 function displayProducts(products) {
   // Création d'une boucle pour afficher tout les éléments avec leurs informations tant qu'il en a encore avec la meme structure vennent de la liste "products" qui sera nommer ici en "element"

@@ -43,7 +43,7 @@ h4 {
     text-align: center;
     padding: 10px;
     margin: auto;
-    box-shadow: 0px 10px 30px rgb(0 0 0 / 37%);
+    box-shadow: 0px 10px 30px rgb(0 0 0 / 5%);
     margin-bottom: 60px;
 }
 
@@ -746,6 +746,16 @@ footer {
 /* Responsive */
 
 @media screen and (max-device-width: 2600px) {
+    .liste-box {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .box1 i, .box2 i, .box3 i {
+        margin-right: 65px;
+        margin-left: 0px;
+    }
+
     .img-menu-haut {
         height: 725px;
         width: 2600px;
@@ -775,6 +785,15 @@ footer {
     .box-restaurant {
         grid-template-columns: 1fr;
     }
+
+    .box1 i, .box2 i, .box3 i {
+        margin-right: 10px;
+        margin-left: 0px;
+    }
+
+    .box1, .box2, .box3 {
+        padding: 30px 30px;
+    }
 }
 
 
@@ -786,6 +805,10 @@ footer {
 
     .menu-haut i {
         font-size: 16px;
+    }
+
+    .liste-box {
+        display: block;
     }
 }
 

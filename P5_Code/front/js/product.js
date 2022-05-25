@@ -19,9 +19,15 @@ fetch("http://localhost:3000/api/products/"+id)
 
   })
   .catch(function (err) {
-    console.log("Erreur");
+    erreurMessageApi(err);
   });
 ;
+
+function erreurMessageApi() {
+  console.table("ERREUR");
+  let blockErreurMessage = document.getElementsByClassName("item__content__description__title");
+  blockErreurMessage.textContent = "ERREUR";
+}
 
 function displayElement(element) {
 
