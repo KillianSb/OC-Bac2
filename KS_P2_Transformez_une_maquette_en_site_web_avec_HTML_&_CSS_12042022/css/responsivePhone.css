@@ -171,6 +171,10 @@
         width: 100%;;
     }
 
+    .title-left-box {
+        margin: 26px;
+    }
+
     .box-annonce {
         width: 90%;
         margin: 8px;
@@ -194,10 +198,11 @@
 
     .plus {
         font-size: 20px;
+        margin: 26px;
     }
-    
-    .box-activites {
-        margin-top: 50px;
+
+    .title-box-activites {
+        margin: 26px;
     }
 
     .contenu-activites {
