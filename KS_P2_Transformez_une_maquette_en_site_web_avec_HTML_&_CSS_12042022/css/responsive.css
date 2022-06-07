@@ -1,5 +1,8 @@
-@media screen and (max-width: 768px){
+@media screen and (min-width: 768px) and (max-width: 992px){
 
+    .inside-elements-right{
+        width: 97%;
+    }
     .center-box {
         width: 100%;
         flex-direction: column;
@@ -15,15 +18,33 @@
         flex-direction: column;
     }
 
-    .inside-elements-right {
-        width: 95%;
+    .box-activites {
+        margin-top: 50px;
+    }
+
+    .box-activites1, .box-activites2, .box-activites3, .box-activites4, .box-activites5, .box-activites6 {
+        margin: 15px 0;
+    }
+
+    .box-activites1, .box-activites4 {
+        width: 100%;
     }
 
     .box-activites2-3, .box-activites5-6 {
         width: 100%;
+        margin: 15px 0;
+    }
+
+    #img-activites2, #img-activites5 {
+        height: 470px;
     }
 
     .img-activites {
-        height: 200px;
+        height: 470px;
     }
+
+    .box-activites2, .box-activites3, .box-activites5, .box-activites6 {
+        height: 100%;
+    }
+
 }

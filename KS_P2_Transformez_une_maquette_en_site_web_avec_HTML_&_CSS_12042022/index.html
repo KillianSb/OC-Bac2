@@ -39,14 +39,15 @@
                     <h2 id="h2-haut">Trouvez votre hébergement pour des vacances de réve</h2>
                     <p id="p-haut">En plein centre ville ou en pleine nature</p>
                 </div>
-                <div class="recherche">
-                    <ul class="liste-search">
-                        <li id="icon-recherche" class="icon-recherche"><i class="fas fa-map-marker-alt"></i></li>
-                        <li id="bar-rechercher" class="bar-search">Marseille, France</li>
-                        <li id="rechercher" class="search">Rechercher</li>
-                        <li id="loupe" class="search"><i class="fa-solid fa-magnifying-glass"></i></li>
-                    </ul>    
-                </div>
+                <!-- <ul class="liste-search"> -->
+                <form class="recherche" action="#" method="get">
+                    <span id="icon-recherche" class="icon-recherche">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </span>
+                    <input id="bar-rechercher" class="bar-search" placeholder="Marseille, France">
+                    <button type="submit" id="rechercher" class="search"><i id="loupe" class="fa-solid fa-magnifying-glass"></i><p id="text_rechercher">Rechercher</p></button>
+                <!-- </ul>     -->
+                </form>
             </div>
     
             <div class="sous-menu">
@@ -90,7 +91,7 @@
                             </div>
                             <div class="box-contenu-populaire">
                                 <div class="box-description-populaire">
-                                    <div class="nom-hebergement-populaire">Hôtel Le Soleil du matin</div>
+                                    <div class="nom-hebergement-populaire">Hôtel Le Soleil du<br> matin</div>
                                     <div class="prix-hebergement-populaire">Nuit a partir de <b>128€</b></div>
                                 </div>
                                 <div class="rating-populaire">
@@ -110,7 +111,7 @@
                             </div>
                             <div class="box-contenu-populaire">
                                 <div class="box-description-populaire">
-                                    <div class="nom-hebergement-populaire">Au coeur de l'eau Chambre d'hotes</div>
+                                    <div class="nom-hebergement-populaire">Au coeur de l'eau<br> Chambre d'hotes</div>
                                     <div class="prix-hebergement-populaire">Nuit a partir de <b>71€</b></div>
                                 </div>
                                 <div class="rating-populaire">
@@ -130,7 +131,7 @@
                             </div>
                             <div class="box-contenu-populaire">
                                 <div class="box-description-populaire">
-                                    <div class="nom-hebergement-populaire">Hôtel Tout bleu et blanc</div>
+                                    <div class="nom-hebergement-populaire">Hôtel Tout bleu et<br> blanc</div>
                                     <div class="prix-hebergement-populaire">Nuit a partir de <b>68€</b></div>
                                 </div>
                                 <div class="rating-populaire">
@@ -271,7 +272,7 @@
                 </div>
                 <div class="contenu-activites">
                     <div class="box-activites1">
-                        <div class="box-img-activites">
+                        <div id="img-activites-1" class="box-img-activites">
                             <img  id="photo1" src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="">
                         </div>
                         <div class="box-description-activites">
@@ -280,15 +281,15 @@
                     </div>
                     <div class="box-activites2-3">
                         <div class="box-activites2">
-                            <div class="box-img-activites">
-                                <img class="img-activites" src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="">
+                            <div id="img-activites-2" class="box-img-activites">
+                                <img id="img-activites2" class="img-activites" src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="">
                             </div>
                             <div class="box-description-activites">
-                                <div class="nom-lieux">Fort de Pomègues</div>
+                                <div id="nom-lieux-2" class="nom-lieux">Fort de Pomègues</div>
                             </div>
                         </div>
                         <div class="box-activites3">
-                            <div class="box-img-activites">
+                            <div id="img-activites-3" class="box-img-activites">
                                 <img class="img-activites" src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="">
                             </div>
                             <div class="box-description-activites">
@@ -297,7 +298,7 @@
                         </div>
                     </div>
                     <div class="box-activites4">
-                        <div class="box-img-activites">
+                        <div id="img-activites-4" class="box-img-activites">
                             <img id="photo2" src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="">
                         </div>
                         <div class="box-description-activites">
@@ -306,15 +307,15 @@
                     </div>
                     <div class="box-activites5-6">
                         <div class="box-activites5">
-                            <div class="box-img-activites">
-                                <img class="img-activites" src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="">
+                            <div id="img-activites-5" class="box-img-activites">
+                                <img id="img-activites5" class="img-activites" src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="">
                             </div>
                             <div class="box-description-activites">
-                                <div class="nom-lieux">Notres-Dame-de-la-Garde</div>
+                                <div id="nom-lieux-5" class="nom-lieux">Notres-Dame-de-la-Garde</div>
                             </div>
                         </div>
                         <div class="box-activites6">
-                            <div class="box-img-activites">
+                            <div id="img-activites-6" class="box-img-activites">
                                 <img class="img-activites" src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="">
                             </div>
                             <div class="box-description-activites">

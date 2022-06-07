@@ -1,21 +1,36 @@
 @media screen and (max-width: 767px){
 
+    .body2 {
+        display: unset;
+        margin: unset;
+        padding: unset;
+    }
+
+    header {
+        width: 100%;
+        padding: 0;
+    }
+
     .navbar {
         flex-direction: column;
+        padding: 0;
+        width: inherit;
+        height: 65px;
+        display: flex;
+        align-items: center;
     }
 
     .links li a {
         font-size: 23px;
         border-top: none;
         border-bottom: 4px solid rgb(255 255 255 / 0%);
-        width: 353px;
+        text-align: center;
     }
 
-    .links li a:hover {
+    .links li:hover {
         color: rgb(16 112 255);
         border-top: none;
         border-bottom: 4px solid rgb(45, 129, 255);
-        width: 353px;
     } 
 
     .navbar div img {
@@ -27,6 +42,9 @@
         margin-right: auto;
         list-style: none;
         display: flex;
+        text-align: center;
+        display: flex;
+        width: 100%;
     }
 
     .links {
@@ -37,17 +55,13 @@
         width: 50%;
     }
 
-    .links li a {
-        width: 100%;
-        text-align: center;
-    }
-
     .menu-haut {
-        margin-top: 100px;
+        margin-top: 20%;
     }
 
     #h2-haut {
-        margin: 0px 300px 0px 0px;
+        display: flex;
+        justify-content: flex-start;
     }
 
     #p-haut {
@@ -56,12 +70,18 @@
 
     .recherche {
         margin-top: 30px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
     }
 
     .search {
         border-radius: 19px 19px 19px 19px;
-        width: 3%;
+        width: 15%;
+        padding: 15px;
         text-align: center;
+        justify-content: center;
+        display: flex;
     }
 
     .liste-search {
@@ -71,19 +91,22 @@
     }
 
     #icon-recherche {
-        width: 3%;
+        width: 10%;
         text-align: center;
+        justify-content: center;
     }
 
     #bar-rechercher {
         width: 50%;
+        font-size: 18px;
+        margin-left: 5%;
     }
 
     #loupe {
         display: initial;
     }
 
-    #rechercher {
+    #text_rechercher {
         display: none;
     }
     
@@ -106,9 +129,8 @@
     }
 
     .inside-elements-right {
-        margin-left: -23px;
-        width: 115%;
-        border-radius: unset;
+        width: calc(100% - 20px);
+        border-radius: 0;
     }
 
     .title-right-box div, .title-right-box i {
@@ -116,11 +138,12 @@
     }
 
     .title-right-box {
-        justify-content: space-around;
+        justify-content: space-between;
     }
 
     .box-populaire {
-        width: 90%;
+        width: 100%;
+        margin: 20px auto;
     }
 
     .box-img-populaire img {
@@ -131,22 +154,34 @@
         width: 50%;
     }
 
+    .center-box {
+        flex-direction: column;
+    }
+
     .box-contenu-populaire {
         align-content: flex-start;
         justify-content: center;
-        width: 100%;
-        margin: 24px;
+        width: 46%;
+        margin-left: 10px;
     }
 
     .inside-elements-left {
         background-color: unset;
         box-shadow: unset;
+        width: 100%;;
     }
 
     .box-annonce {
-        width: 98%;
+        width: 90%;
         margin: 8px;
         box-shadow: 3px 30px 40px 10px rgb(0 0 0 / 10%);
+    }
+
+    .box-description {
+        width: 95%;
+        margin: 10px;
+        padding-left: 2%;
+        flex-wrap: wrap;
     }
 
     .box-img-annonce img {
@@ -154,7 +189,7 @@
     }
 
     .img-annonces {
-        width: 98.5%;
+        width: calc(100% - 20px);
     }
 
     .plus {
@@ -165,12 +200,32 @@
         margin-top: 50px;
     }
 
+    .contenu-activites {
+        flex-direction: column;
+    }
+
+    .box-activites1, .box-activites2, .box-activites3, .box-activites4, .box-activites5, .box-activites6 {
+        margin: 15px 45px;
+    }
+
+    .box-activites1, .box-activites4 {
+        width: calc(100% - 90px);
+    }
+
+    .box-activites2-3, .box-activites5-6 {
+        width: 100%;
+    }
+
+    #img-activites2, #img-activites5 {
+        height: 470px;
+    }
+
     .img-activites {
-        height: 355px;
+        height: 470px;
     }
 
     .box-activites2, .box-activites3, .box-activites5, .box-activites6 {
-        height: 400px;
+        height: 100%;
     }
 
     .footer {
