@@ -115,10 +115,32 @@ function cart() {
 
 
       })
-      .catch(error => console.error(error));
+      .catch(error => {
+        // console.dir(error)
+        if (error.message === "Failed to fetch"){
+          error = error.message;
+          ErrorMessage(error);
+        }
+      });
   })
   total();
 }
+
+function ErrorMessage(error) {
+  console.log(error);
+  if (error === 404) {
+    alert('ERREUR : Le liens n existe pas')
+  }
+  if (error === "Failed to fetch") {
+    alert('ERREUR : API non démarer')
+  }
+
+  // let ErreurH1 = "Erreur"
+  // document.querySelector('.cartAndFormContainer h1').innerHTML = ErreurH1;
+
+  // let messageError = "API non démarer"
+  // document.querySelector('.cart__price p').innerHTML = messageError;
+};
 
 function total() {
   let quantites = 0;
@@ -168,6 +190,11 @@ function modifier(event) {
   const articleId = article.dataset.id;
   const articleColor = article.dataset.color;
   const update = panier.find(panier => articleId == panier.id && articleColor == panier.color);
+
+  if (articleQuantity === 0){
+    alert("Vous ne pouvez pas commander 0 canapé !")
+    supprimer(event);
+  }
 
   update.quantity = articleQuantity;
   

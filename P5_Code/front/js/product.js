@@ -8,7 +8,12 @@ const id = params.get("id");
 fetch("http://localhost:3000/api/products/"+id)
   .then(function (res) {
     if (res.ok) {
+      console.dir(res);
       return res.json();
+    }
+    if (res.status === 404) {
+      error = res.status;
+      ErrorMessage(error);
     }
   })
   .then(function (element) {
@@ -18,16 +23,24 @@ fetch("http://localhost:3000/api/products/"+id)
     // console.log(element);
 
   })
-  .catch(function (err) {
-    erreurMessageApi(err);
+  .catch(error => {
+    // console.dir(error)
+    if (error.message === "Failed to fetch"){
+      error = error.message;
+      ErrorMessage(error);
+    }
   });
 ;
 
-function erreurMessageApi() {
-  console.table("ERREUR");
-  let blockErreurMessage = document.getElementsByClassName("item__content__description__title");
-  blockErreurMessage.textContent = "ERREUR";
-}
+function ErrorMessage(error) {
+  console.log(error);
+  if (error === 404) {
+    alert('ERREUR : Le liens n existe pas')
+  }
+  if (error === "Failed to fetch") {
+    alert('ERREUR : API non démarer')
+  }
+};
 
 function displayElement(element) {
 

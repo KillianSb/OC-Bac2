@@ -121,10 +121,12 @@ h2 {
     border-radius : 100%;
     background-color: #9356DC;
     padding: 17px;
-    margin: 8px;
+    /* margin: 8px; */
     color: white;
     text-align: center;
     font-size: 25px;
+    width: 30px;
+    height: 30px;
 }
 
 .box-restaurant {
@@ -467,21 +469,43 @@ footer {
 
 /* Apparition menu */
 
-@keyframes transition {
+/* @keyframes transition {
     0%   { margin-left: -70px;opacity:0; }
     100% { margin-left: 24px;opacity:1; }
 }
 
 .sous-titre-menu {
     opacity:0;animation: transition 1s ease-in-out 1s forwards;
-}
+} */
 
 @keyframes transition2 {
-    0%   { margin-bottom: -50px;opacity:0; }
-    100% { margin-bottom: 20px;opacity:1; }
+    0%   { opacity: 0;transform: translate3d(-70px, 0, 0); }
+    100% { opacity: 1;transform: translate3d(0, 0, 0); }
 }
 
-.entrees1 {
+.entrees1, .plats1, .desserts1 {
+    animation: transition2 2s ease-in-out 1s forwards;
+    opacity: 0;
+}
+
+
+.entrees2, .plats2, .desserts2 {
+    animation: transition2 2.5s ease-in-out 1.2s forwards;
+    opacity: 0;
+}
+
+.entrees3, .plats3, .desserts3 {
+    animation: transition2 3s ease-in-out 1.4s forwards;
+    opacity: 0;
+}
+
+.entrees4 {
+    animation: transition2 3.5s ease-in-out 1.6s forwards;
+    opacity: 0;
+}
+
+
+/* .entrees1 {
     opacity: 0;
     animation: transition2 2s ease-in-out 1s forwards;
 }
@@ -529,7 +553,7 @@ footer {
 .desserts3 {
     opacity: 0;
     animation: transition2 7s ease-in-out 3.4s forwards;
-}
+} */
 
 /* Fin apparition menu */
 
@@ -597,13 +621,13 @@ footer {
 
 /* Fin Icon validation apparition */
 
-/* Animation Ecrant noir */
+/* Animation Ecrant flouté */
 
 @keyframes loading {
-    0%   { filter: blur(7px);opacity:0; }
-    20%   { filter: blur(6px);;opacity:1; }
-    50%   { filter: blur(4px);;opacity:1; }
-    80%   { filter: blur(2px);;opacity:1; }
+    0%   { filter: blur(50px);opacity:0; }
+    20%   { filter: blur(30px);;opacity:1; }
+    50%   { filter: blur(10px);;opacity:1; }
+    80%   { filter: blur(5px);;opacity:1; }
     100% { filter: blur(0px);opacity:1; }
 }
 
@@ -763,9 +787,9 @@ footer {
 
     .number {
         padding: 9px;
-        margin: auto;
+        /* margin: auto; */
         left: -14px;
-        top: 22px;
+        top: 42px;
     }
 
     .box1, .box2, .box3 {
@@ -787,12 +811,12 @@ footer {
     }
 
     .box1 i, .box2 i, .box3 i {
-        margin-right: 10px;
-        margin-left: 0px;
+        margin-right: 41px;
+        margin-left: 42px;
     }
 
     .box1, .box2, .box3 {
-        padding: 30px 30px;
+        padding: 50px 30px;
     }
 }
 
