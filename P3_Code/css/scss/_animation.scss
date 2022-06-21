@@ -1,0 +1,282 @@
+@import "../utils/variables";
+
+/* Apparition menu */
+
+@keyframes transition2 {
+    0%   { opacity: 0;transform: translate3d(-70px, 0, 0); }
+    100% { opacity: 1;transform: translate3d(0, 0, 0); }
+}
+
+.entrees1, .plats1, .desserts1 {
+    animation: transition2 2s ease-in-out 1s forwards;
+    opacity: 0;
+}
+
+
+.entrees2, .plats2, .desserts2 {
+    animation: transition2 2.5s ease-in-out 1.2s forwards;
+    opacity: 0;
+}
+
+.entrees3, .plats3, .desserts3 {
+    animation: transition2 3s ease-in-out 1.4s forwards;
+    opacity: 0;
+}
+
+.entrees4 {
+    animation: transition2 3.5s ease-in-out 1.6s forwards;
+    opacity: 0;
+}
+
+
+/* .entrees1 {
+    opacity: 0;
+    animation: transition2 2s ease-in-out 1s forwards;
+}
+
+.entrees2 {
+    opacity: 0;
+    animation: transition2 2.5s ease-in-out 1.2s forwards;
+}
+
+.entrees3 {
+    opacity: 0;
+    animation: transition2 3s ease-in-out 1.4s forwards;
+}
+
+.entrees4 {
+    opacity: 0;
+    animation: transition2 3.5s ease-in-out 1.6s forwards;
+}
+
+.plats1 {
+    opacity: 0;
+    animation: transition2 4s ease-in-out 2s forwards;
+}
+
+.plats2 {
+    opacity: 0;
+    animation: transition2 4.5s ease-in-out 2.2s forwards;
+}
+
+.plats3 {
+    opacity: 0;
+    animation: transition2 5s ease-in-out 2.4s forwards;
+}
+
+.desserts1 {
+    opacity: 0;
+    animation: transition2 6s ease-in-out 3s forwards;
+}
+
+.desserts2 {
+    opacity: 0;
+    animation: transition2 6.5s ease-in-out 3.2s forwards;
+}
+
+.desserts3 {
+    opacity: 0;
+    animation: transition2 7s ease-in-out 3.4s forwards;
+} */
+
+/* Fin apparition menu */
+
+/* Icon validation apparition */
+
+.entrees1:hover .circle i,
+.entrees2:hover .circle i,
+.entrees3:hover .circle i,
+.entrees4:hover .circle i,
+.plats1:hover .circle i,
+.plats2:hover .circle i,
+.plats3:hover .circle i,
+.desserts1:hover .circle i,
+.desserts2:hover .circle i,
+.desserts3:hover .circle i {
+	/* animation de rotation sur le hover de block */
+	transition-delay: 0.2s;
+	transform: rotate(-360deg);
+}
+
+.circle i {
+	/* pour revenir à la position initial quand on est plus sur le hover */
+	transition: transform 0.5s ease 0s;
+	color: $white;
+}
+
+.entrees1:hover .box-contenu,
+.entrees2:hover .box-contenu,
+.entrees3:hover .box-contenu,
+.entrees4:hover .box-contenu,
+.plats1:hover .box-contenu,
+.plats2:hover .box-contenu,
+.plats3:hover .box-contenu,
+.desserts1:hover .box-contenu,
+.desserts2:hover .box-contenu,
+.desserts3:hover .box-contenu {
+	/* on change la width du block avec les infos sur le hover */
+	transition: 0.5s ease 0s;
+	width: 85%;
+}
+
+.entrees1:hover .circle,
+.entrees2:hover .circle,
+.entrees3:hover .circle,
+.entrees4:hover .circle,
+.plats1:hover .circle,
+.plats2:hover .circle,
+.plats3:hover .circle,
+.desserts1:hover .circle,
+.desserts2:hover .circle,
+.desserts3:hover .circle {
+	/* on change la position du cercle à 0 pour qu'il soit dans le block avec une transition pour que ce soit smooth */
+	right: 0;
+	transition: 0.5s ease 0s;
+}
+
+/* Fin Icon validation apparition */
+
+/* Animation Ecrant flouté */
+
+@keyframes loading {
+    0%   { filter: blur(50px);opacity:0; }
+    20%   { filter: blur(30px);;opacity:1; }
+    50%   { filter: blur(10px);;opacity:1; }
+    80%   { filter: blur(5px);;opacity:1; }
+    100% { filter: blur(0px);opacity:1; }
+}
+
+.loding-body {
+    opacity: 0;
+    animation: loading 5s ease-in-out 0s forwards;
+}
+
+/* Animation ball */
+
+@keyframes spinner-loading {
+    0%   { opacity:1; }
+    50%   { opacity:1; }
+	90%   { opacity:1; }
+    100% { opacity:0;display: none; }
+}
+
+.loading {
+    animation: spinner-loading 7s ease-in-out 0s forwards;
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+	display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner {
+    display: flex;
+    text-align: center;
+    position: absolute;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.contener_ball {
+    height: 115px;
+    overflow: hidden;
+    display: block;
+    margin-right: 475px;
+    margin-left: 475px;
+} 
+
+.ball_bleu {
+    border-radius:30px;
+    width:30px;
+    -webkit-animation:anim 1s infinite ease;
+    -moz-animation:anim 1s infinite ease;
+    -ms-animation:anim 1s infinite ease;
+    -o-animation:anim 1s infinite ease;
+    animation:anim 1s infinite ease;
+    animation-iteration-count: 4.5;
+} 
+
+.ombre_bleu {
+    border-radius: 30px;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.767);
+    box-shadow: 1px 1px 8px #4d4d4d;
+    -webkit-animation: anim_ombre 1s infinite ease;
+    -moz-animation: anim_ombre 1s infinite ease;
+    -ms-animation: anim_ombre 1s infinite ease;
+    -o-animation: anim_ombre 1s infinite ease;
+    animation: anim_ombre 1s infinite ease;
+    animation-iteration-count: 4.5;
+} 
+
+@-webkit-keyframes anim {
+    0% { height:30px;margin-top:0px;background-color:$pink }
+    25% { height:15px;margin-top:100px;background-color:$violet }
+    100% { height:30px;margin-top:0px;background-color:$pink }
+} 
+
+@-webkit-keyframes anim_ombre {
+    0% { width:90px;height:2px }
+    25% { width:30px;height:2px }
+    100% { width:90px;height:2px }
+} 
+
+@-moz-keyframes anim {
+    0% { height:30px;margin-top:0px;background-color:$pink }
+    25% { height:15px;margin-top:100px;background-color:$violet }
+    100% { height:30px;margin-top:0px;background-color:$pink }
+} 
+
+@-moz-keyframes anim_ombre {
+    0% { width:90px;height:2px }
+    25% { width:30px;height:2px }
+    100% { width:90px;height:2px }
+} 
+
+@-ms-keyframes anim {
+    0% { height:30px;margin-top:0px;background-color:$pink }
+    25% { height:15px;margin-top:100px;background-color:$violet }
+    100% { height:30px;margin-top:0px;background-color:$pink }
+}
+
+@-ms-keyframes anim_ombre {
+    0% { width:90px;height:2px }
+    25% { width:30px;height:2px }
+    100% { width:90px;height:2px }
+} 
+
+@keyframes anim {
+    0% { height:30px;margin-top:0px;background-color:$pink }
+    25% { height:15px;margin-top:100px;background-color:$violet }
+    100% { height:30px;margin-top:0px;background-color:$pink }
+} 
+
+@keyframes anim_ombre {
+    0% { width:90px;height:2px }
+    25% { width:30px;height:2px }
+    100% { width:90px;height:2px }
+}
+
+/* Fin animation ball */
+
+/* Animation Coeur fondu */
+
+@keyframes coeur {
+    0%   { color: #6c06e9;;opacity:0; }
+    20% { color: #7620df;opacity:0.5; }
+    60% { color: #843add;opacity:1; }
+    100% { color: $violet;opacity:1; }
+}
+
+/* Fin animation Coeur fondu */
+
+/* Fin ANIMATION */

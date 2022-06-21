@@ -1,0 +1,251 @@
+@import "../utils/variables";
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    font-family: 'Shrikhand', cursive;
+    display: block;
+    padding: 16px;
+	font-size: xxx-large;
+    margin: auto;
+    text-align: center;
+    background-color: $white;
+    box-shadow: 0px 10px 30px rgb(0 0 0 / 37%);
+}
+
+.menu-haut {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+    background-color: rgb(249 249 249);
+	i {
+		display: inline-block;
+		padding: 20px;
+		font-size: 25px;
+	}
+}
+
+h4 {
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    padding: 5px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.menu-haut2 {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+    box-shadow: 0px 10px 30px rgb(0 0 0 / 5%);
+    margin-bottom: 60px;
+}
+
+h3, .menu-haut2-texte, .explore {
+    font-family: 'Roboto', sans-serif;
+}
+
+h3, .menu-haut2-texte {
+    padding: 5px;
+}
+
+.menu-haut2-texte {
+    font-size: 35px;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 37px;
+}
+
+.explore {
+    border-radius: 40px;
+    background: linear-gradient(to bottom right, $pink, $violet);
+    margin: 25px;
+    padding: 18px;
+    color: $white;
+    display: inline-block;
+    font-size: 30px;
+}
+
+.explore:hover {
+    background: linear-gradient(to bottom right, #fa81d8, #b274ff);
+    box-shadow: 2px 5px 5px rgb(0, 0, 0);
+}
+
+.fonctionnement {
+    display: block;
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 60px;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.liste-box {
+    display: block;
+}
+
+.box1, .box2, .box3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    border-radius: 30px;
+    display: block;
+    box-shadow: 0px 10px 30px rgb(0 0 0 / 37%);
+    margin: 20px;
+    padding: 30px 40px;
+    margin-bottom: 40px;
+	i {
+		display: inline-block;
+		margin-right: 94px;
+		margin-left: 60px;
+		color: $violet;
+	}
+}
+
+.number {
+    display: block;
+    position: absolute;
+    border-radius : 100%;
+    background-color: $violet;
+    padding: 17px;
+    /* margin: 8px; */
+    color: $white;
+    text-align: center;
+    font-size: 25px;
+    width: 30px;
+    height: 30px;
+}
+
+.box-restaurant {
+    display: grid;
+    gap: 35px 2em;
+    margin-top: 25px;
+    margin-bottom: 160px;
+    justify-items: center;
+	a, a:visited {
+		color: $black;
+	}
+	a:hover {
+		color: $violet;
+	}
+}
+
+.restaurants {
+    display: block;
+    margin: 10px;
+}
+
+.restaurant1, .restaurant2, .restaurant3, .restaurant4 {
+    display: block;
+    box-shadow: 0px 30px 40px rgb(1 1 1 / 15%);
+    border-radius: 35px;
+}
+
+.box-img-restaurants {
+    position: relative;
+	img {
+		border-radius: 50px 50px 0px 0px;
+	}
+}
+
+.img-restaurants {
+    height: 450px;
+    width: 883px;
+    position: relative;
+}
+
+.description {
+    display: inline-block;
+    padding: 10px;
+    margin-left: 22px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 33px;
+    white-space: pre-line;
+    margin-bottom: 22px;
+}
+
+.logo-heart {
+    display: inline-block;
+    font-size: 45px;
+    margin-right: 22px;
+    float: right;
+    margin-top: 30px;
+    color: $white;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: $black;
+	i:hover {
+		-webkit-text-stroke-width: 2px;
+		-webkit-text-stroke-color: $black;
+		animation: coeur 6s ease-in-out 0s forwards;
+	}
+}
+
+.block-new {
+    display: block;
+    background-color: $green;
+    position: absolute;
+    z-index: 1;
+    margin: 21px;
+    border-radius: 5px;
+    right: 0;
+}
+
+.new {
+    font-size: 30px;
+    margin: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer {
+    display: block;
+    padding: 16px;
+    margin: auto;
+    color: $white;
+    background-color: rgb(53, 53, 53);
+    box-shadow: 0px 10px 30px rgb(0 0 0 / 37%);
+}
+
+.titre-footer {
+    font-family: 'Shrikhand', cursive;
+    margin: 30px;
+    font-size: xx-large;
+}
+
+.liste-footer {
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+
+.icon-footer {
+    display: inline-block;
+    position: absolute;
+    font-size: 23px;
+    padding: 8px;
+}
+
+.texte-marge, .texte-seul {
+    font-size: 28px;
+    margin: 10px;
+    display: block;
+}
+
+.texte-marge:hover, .texte-seul:hover {
+    color: $violet;
+}
+
+.texte-marge {
+    padding-left: 40px;
+}

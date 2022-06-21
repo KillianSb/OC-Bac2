@@ -1,0 +1,156 @@
+.logo-retour {
+    position: absolute;
+    font-size: 40px;
+    margin: 30px;
+	i:hover {
+		color: $violet;
+	}
+}
+
+.menu-haut-img {
+    display: block;
+    position: fixed;
+}
+
+.img-menu-haut {
+    height: 657px;
+    width: 1788px;
+    position: absolute;
+}
+
+.logo-heart-menu {
+    display: inline-block;
+    font-size: 45px;
+    float: right;
+    margin: 50px;
+    color: white;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: $black;
+	i:hover {
+		/* color: linear-gradient(to bottom right, #FF79DA, #9356DC); */
+		-webkit-text-stroke-width: 2px;
+		-webkit-text-stroke-color: $black;
+		animation: coeur 6s ease-in-out 0s forwards;
+	}
+}
+
+.h2-menu {
+    font-family: 'Shrikhand', cursive;
+    font-size: 55px;
+    padding-top: 10px;
+    padding-left: 48px;
+    margin-bottom: 32px;
+    display: inline-block;
+    font-weight: initial;
+}
+
+.titre-page-menu {
+    display: block;
+    border-radius: 85px 85px 0px 0px;
+    position: relative;
+    background-color: $white;
+    margin-top: 484px;
+}
+
+.sous-titre-menu {
+    font-family: 'Roboto', sans-serif;
+    margin: 24px;
+    padding: 3px;
+    font-size: 35px;
+    font-style: italic;
+    display: inline;
+    border-bottom: 4px solid $green;
+}
+
+.block-carte-menu {
+    display: block;
+    padding: 10px;
+    margin: auto;
+    position: relative;
+    background-color: $white;
+}
+
+.liste-entrees, .liste-plats, .liste-desserts {
+    display: block;
+    margin-top: 38px;
+}
+
+.entrees1, .entrees2, .entrees3, .entrees4,
+.plats1, .plats2, .plats3,
+.desserts1, .desserts2, .desserts3 {
+	font-family: 'Roboto', sans-serif;
+    border-radius: 30px;
+    box-shadow: 0px 10px 30px rgb(0 0 0 / 37%);
+    margin: 20px;
+    padding: 17px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    position: relative;
+    width: 92%;
+    display: flex;
+}
+
+.titre-entree, .titre-plat, .titre-dessert,
+.prix-entree, .prix-plat, .prix-dessert {
+    font-weight: bold;
+}
+
+.sous-titre-entree, .prix-entree,
+.sous-titre-plat, .prix-plat,
+.sous-titre-dessert, .prix-dessert {
+    font-size: 28px;
+}
+
+.info{
+	display: flex;
+	flex-direction: column;
+	justify-content:space-around;
+}
+
+.titre-entree{
+	font-size: 30px;
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+
+.circle{
+	/* position absolute à -60px (la taille du block) pour qu'il soit en dehors du block */
+	transition: 0.5s ease 0s;
+    position: absolute;
+    right: -110px;
+    top: 0;
+    background-color: $green;
+    height: 100%;
+    width: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	font-size: xx-large;
+}
+
+.bloc-commander {
+    display: block;
+    text-align: center;
+    padding: 50px;
+    padding-bottom: 100px;
+    position: relative;
+    background-color: $white;
+}
+
+.commander {
+    font-family: 'Roboto', sans-serif;
+    display: inline;
+    text-align: center;
+    border-radius: 168px;
+    background: linear-gradient(to bottom right, $pink, $violet);
+    padding: 21px;
+    padding-left: 77px;
+    padding-right: 77px;
+    color: $white;
+    font-size: 30px;
+}
+
+.commander:hover {
+    background: linear-gradient(to bottom right, #fa81d8, #b274ff);
+    box-shadow: 2px 5px 5px rgb(0, 0, 0);
+}
