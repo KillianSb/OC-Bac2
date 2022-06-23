@@ -106,7 +106,6 @@ p, .infos-logement{
 
 .recherche {
     display : flex;
-    /* border: 1px solid black; */
     width: 330px;
     border-radius: 15px;
 }

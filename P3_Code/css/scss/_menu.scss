@@ -101,19 +101,19 @@
     font-size: 28px;
 }
 
-.info{
+.info {
 	display: flex;
 	flex-direction: column;
 	justify-content:space-around;
 }
 
-.titre-entree{
+.titre-entree, .titre-plat, .titre-dessert {
 	font-size: 30px;
 	font-weight: 600;
 	margin-bottom: 5px;
 }
 
-.circle{
+.circle {
 	/* position absolute à -60px (la taille du block) pour qu'il soit en dehors du block */
 	transition: 0.5s ease 0s;
     position: absolute;
